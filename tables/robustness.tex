@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+  \centering
+  \caption{ARI under feature perturbation (Dermatology). Mean $\pm$ std over 20 noise draws.}
+  \label{tab:robustness}
+  \begin{tabular}{lccccc}
+    \toprule
+    \textbf{Method} & $\epsilon=0.00$ & $\epsilon=0.05$ & $\epsilon=0.10$ & $\epsilon=0.15$ & $\epsilon=0.20$ \\
+    \midrule
+    MG-FGR & 0.7491 $\pm$ 0.0000 & 0.7255 $\pm$ 0.0678 & 0.7007 $\pm$ 0.0814 & 0.6825 $\pm$ 0.1300 & 0.6209 $\pm$ 0.1060 \\
+    Single-coarse & 0.7248 $\pm$ 0.0000 & 0.7138 $\pm$ 0.0487 & 0.6610 $\pm$ 0.0841 & 0.6453 $\pm$ 0.1427 & 0.5915 $\pm$ 0.1499 \\
+    Single-medium & 0.1936 $\pm$ 0.0000 & 0.1891 $\pm$ 0.0426 & 0.1736 $\pm$ 0.0643 & 0.1861 $\pm$ 0.0598 & 0.1857 $\pm$ 0.0708 \\
+    Single-fine & -0.0048 $\pm$ 0.0000 & -0.0046 $\pm$ 0.0008 & -0.0046 $\pm$ 0.0008 & -0.0045 $\pm$ 0.0009 & -0.0045 $\pm$ 0.0009 \\
+    k-means (raw) & 0.7426 $\pm$ 0.0000 & 0.7451 $\pm$ 0.0275 & 0.7462 $\pm$ 0.0587 & 0.7295 $\pm$ 0.0390 & 0.7264 $\pm$ 0.0417 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

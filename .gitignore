@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.spl
+*.synctex.gz
+
+# Local manuscript drafts and backups
+*.bak
+*.premerge-bak
+*.prefix-bak
+fuzzy-graph-granular-25.5.31.pdf
+fuzzy-graph-granular-reading-notes.pdf
+
+# Local working notes
+task_plan.md
+findings.md
+progress.md
+gude-*.log
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
