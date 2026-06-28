@@ -1036,17 +1036,7 @@ def main():
     datasets["Dermatology"] = (X_derm, y_derm, feat_derm, class_derm)
     print(f"    X={X_derm.shape}, y={len(np.unique(y_derm))} classes")
 
-    # The paper is positioned as a single-dataset case study on Dermatology
-    # (a genuinely multi-subtype clinical dataset).  The extra loaders below are
-    # kept available but disabled so the comparison stays Dermatology-only and
-    # matches the manuscript; re-enable the loop to add supplementary datasets.
-    extra_loaders = [
-        # ("Lymphography", load_lymphography),
-        # ("New Thyroid", load_new_thyroid),
-        # ("Cleveland Heart", load_cleveland_heart),
-        # ("Post-operative", load_postoperative),
-        # ("Primary Tumor", load_primary_tumor),
-    ]
+    
     for ds_name, loader in extra_loaders:
         print(f"  Loading {ds_name} ...")
         X, y, feat, cls = loader()
